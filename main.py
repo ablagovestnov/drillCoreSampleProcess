@@ -10,7 +10,14 @@ from lib.drill_core_process import DrillCoreProcess
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-    dcp = DrillCoreProcess(imageName = 'img.jpeg')
+    dcp = DrillCoreProcess()
+    dcp.process_image(image_name = 'img.jpeg')
+    # dcp.process_image(image_name = 'img2.jpeg')
+    # dcp.process_image(image_name = 'img3.jpeg')
+
+    # dcp.split_drill_core()
+
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
